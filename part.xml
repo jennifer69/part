@@ -1,132 +1,39 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="46" inline="true" x="78" y="47">
-    <field name="VAR">distance</field>
-    <value name="VALUE">
-      <block type="math_number" id="553">
-        <field name="NUM">0</field>
-      </block>
-    </value>
+  <block type="movement_setmotors" id="814" inline="true" x="-176" y="-165">
     <next>
-      <block type="controls_whileUntil" id="60" inline="false">
-        <field name="MODE">WHILE</field>
-        <value name="NUMBER">
-          <block type="logic_compare" id="75" inline="true">
-            <field name="OP">GT</field>
-            <value name="A">
-              <block type="sensor_object" id="133">
-                <field name="OBJECT">LEFTFRONT</field>
-              </block>
-            </value>
-            <value name="B">
-              <block type="math_number" id="191">
-                <field name="NUM">75</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="movement_forward" id="217">
-            <next>
-              <block type="robot_delay" id="264" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="424">
-                    <field name="NUM">200</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_stop" id="280">
-                    <next>
-                      <block type="robot_delay" id="324" inline="true">
-                        <value name="DELAY">
-                          <block type="math_number" id="441">
-                            <field name="NUM">100</field>
-                          </block>
-                        </value>
-                        <next>
-                          <block type="variables_set" id="375" inline="true">
-                            <field name="VAR">distance</field>
-                            <value name="VALUE">
-                              <block type="math_arithmetic" id="529" inline="true">
-                                <field name="OP">ADD</field>
-                                <value name="A">
-                                  <block type="variables_get" id="539">
-                                    <field name="VAR">distance</field>
-                                  </block>
-                                </value>
-                                <value name="B">
-                                  <block type="math_number" id="546">
-                                    <field name="NUM">1</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </statement>
+      <block type="movement_left" id="711">
         <next>
-          <block type="oled_cleardisplay" id="487">
+          <block type="movement_right" id="728">
             <next>
-              <block type="oled_setcursor" id="586" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="593">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="600">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
+              <block type="movement_stutter" id="739">
                 <next>
-                  <block type="oled_drawtext" id="609">
-                    <field name="TEXT"># step=</field>
+                  <block type="controls_if" id="752" inline="false">
+                    <value name="IF0">
+                      <block type="sensor_light" id="790">
+                        <field name="LIGHT">RIGHT</field>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="expansion_exp2power" id="774">
+                        <field name="SERVO">ON</field>
+                      </block>
+                    </statement>
                     <next>
-                      <block type="oled_drawnumber" id="618" inline="true">
-                        <value name="NUMBER">
-                          <block type="variables_get" id="622">
-                            <field name="VAR">distance</field>
-                          </block>
-                        </value>
+                      <block type="multimedia_playwav" id="759">
+                        <field name="WAV"></field>
                         <next>
-                          <block type="controls_repeat" id="681" inline="true">
-                            <value name="TIMES">
-                              <block type="variables_get" id="685">
-                                <field name="VAR">distance</field>
-                              </block>
-                            </value>
-                            <statement name="DO">
-                              <block type="movement_reverse" id="695">
+                          <block type="oled_color" id="799">
+                            <field name="OBJECT">BLACK</field>
+                            <next>
+                              <block type="comment_comment" id="825">
+                                <field name="TEXT">new phone who dis</field>
                                 <next>
-                                  <block type="robot_delay" id="696" inline="true">
-                                    <value name="DELAY">
-                                      <block type="math_number" id="697">
-                                        <field name="NUM">200</field>
-                                      </block>
-                                    </value>
-                                    <next>
-                                      <block type="movement_stop" id="701">
-                                        <next>
-                                          <block type="robot_delay" id="698" inline="true">
-                                            <value name="DELAY">
-                                              <block type="math_number" id="699">
-                                                <field name="NUM">100</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
-                                      </block>
-                                    </next>
+                                  <block type="oled_linerect" id="834">
+                                    <field name="OBJECT">RECT</field>
                                   </block>
                                 </next>
                               </block>
-                            </statement>
+                            </next>
                           </block>
                         </next>
                       </block>
