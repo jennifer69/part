@@ -1,0 +1,10 @@
+{
+    "name": "part",
+    "version": "1.0.0",
+    "manifest_version": 1,
+    "project_type": "application",
+    "executable_type": "scratch",
+    "executable": "part.xml",
+    "author": "jennifer69",
+    "minimum_firmware_version": 42
+}
