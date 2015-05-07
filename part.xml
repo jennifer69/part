@@ -25,6 +25,15 @@
                         <next>
                           <block type="comment_comment" id="825">
                             <field name="TEXT">new phone who dis</field>
+                            <next>
+                              <block type="robot_delay" id="845" inline="true">
+                                <value name="DELAY">
+                                  <block type="math_number" id="852">
+                                    <field name="NUM">22</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
