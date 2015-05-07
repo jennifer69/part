@@ -94,6 +94,41 @@
                             <field name="VAR">distance</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="controls_repeat" id="681" inline="true">
+                            <value name="TIMES">
+                              <block type="variables_get" id="685">
+                                <field name="VAR">distance</field>
+                              </block>
+                            </value>
+                            <statement name="DO">
+                              <block type="movement_reverse" id="695">
+                                <next>
+                                  <block type="robot_delay" id="696" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="697">
+                                        <field name="NUM">200</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="movement_stop" id="701">
+                                        <next>
+                                          <block type="robot_delay" id="698" inline="true">
+                                            <value name="DELAY">
+                                              <block type="math_number" id="699">
+                                                <field name="NUM">100</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
