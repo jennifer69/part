@@ -27,11 +27,6 @@
                             <next>
                               <block type="comment_comment" id="825">
                                 <field name="TEXT">new phone who dis</field>
-                                <next>
-                                  <block type="oled_linerect" id="834">
-                                    <field name="OBJECT">RECT</field>
-                                  </block>
-                                </next>
                               </block>
                             </next>
                           </block>
