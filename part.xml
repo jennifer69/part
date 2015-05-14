@@ -10,10 +10,10 @@
       <block type="controls_if" id="404" inline="false">
         <value name="IF0">
           <block type="logic_compare" id="411" inline="true">
-            <field name="OP">EQ</field>
+            <field name="OP">GT</field>
             <value name="A">
-              <block type="math_number" id="424">
-                <field name="NUM">100</field>
+              <block type="sensor_spectrometer" id="439">
+                <field name="LIGHT">BLUE</field>
               </block>
             </value>
             <value name="B">
