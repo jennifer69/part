@@ -1,34 +1,34 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_left" id="711" x="-193" y="-105">
+  <block type="movement_left" id="1" x="-110" y="-51">
     <next>
-      <block type="movement_right" id="728">
+      <block type="movement_right" id="2">
         <next>
-          <block type="movement_stutter" id="739">
+          <block type="movement_stutter" id="3">
             <next>
-              <block type="controls_if" id="752" inline="false">
+              <block type="controls_if" id="4" inline="false">
                 <value name="IF0">
-                  <block type="sensor_light" id="790">
+                  <block type="sensor_light" id="5">
                     <field name="LIGHT">RIGHT</field>
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="expansion_exp2power" id="774">
+                  <block type="expansion_exp2power" id="6">
                     <field name="SERVO">ON</field>
                   </block>
                 </statement>
                 <next>
-                  <block type="multimedia_playwav" id="759">
+                  <block type="multimedia_playwav" id="7">
                     <field name="WAV"></field>
                     <next>
-                      <block type="oled_color" id="799">
+                      <block type="oled_color" id="8">
                         <field name="OBJECT">BLACK</field>
                         <next>
-                          <block type="comment_comment" id="825">
+                          <block type="comment_comment" id="9">
                             <field name="TEXT">new phone who dis</field>
                             <next>
-                              <block type="robot_delay" id="845" inline="true">
+                              <block type="robot_delay" id="10" inline="true">
                                 <value name="DELAY">
-                                  <block type="math_number" id="852">
+                                  <block type="math_number" id="11">
                                     <field name="NUM">22</field>
                                   </block>
                                 </value>
