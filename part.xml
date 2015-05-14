@@ -13,12 +13,12 @@
             <field name="OP">EQ</field>
             <value name="A">
               <block type="math_number" id="424">
-                <field name="NUM">70</field>
+                <field name="NUM">0</field>
               </block>
             </value>
             <value name="B">
               <block type="math_number" id="438">
-                <field name="NUM">0</field>
+                <field name="NUM">70</field>
               </block>
             </value>
           </block>
